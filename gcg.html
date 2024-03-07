@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tran.css" />
+  </head>
+  <body>
+    <form action="" class="c">
+      <h1 class="a">Sở thích của bạn</h1>
+
+      <div class="d">
+        <label for="text">Họ và tên</label>
+        <input type="text" />
+      </div>
+
+      <div class="d">
+        <label for="email" style="margin-right: 24px">Email</label>
+        <input type="text" />
+      </div>
+      <div class="b">
+        <label for="Favourite" style="color: blue">Sở thích</label><br />
+
+        <div class="textdis">
+          <input type="checkbox" /><span>Thể thao</span>
+          <input type="checkbox" /><span>Âm nhạc</span>
+          <input type="checkbox" /><span>Đọc sách</span><br />
+        </div>
+        <div class="textdis">
+          <input type="checkbox" /><span>Lướt web</span>
+          <input type="checkbox" /><span>Chơi game</span>
+          <input type="checkbox" /><span>Điện ảnh</span><br />
+          <input type="checkbox" /><span>Du lịch</span>
+        </div>
+        <div style="margin-left: 60px">
+          <button type="submit">Gửi thông tin</button>
+          <button type="reset">Nhập lại</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
+
+<form class="formxv labelxv stylexv">
+  <h1 style="background-color: blue">Đăng ký học viên</h1>
+  <div>
+    <label for="text" class="d">Họ và tên</label>
+    <input type="text" />
+  </div>
+  <div>
+    <label for="text" class="d">Ngày sinh</label>
+    <input type="date" name="birth" id="birth" />
+  </div>
+  <div>
+    <label for="sex">Giới tính</label>
+    <input type="radio" name="gender" id="" /><span>Nam</span>
+    <input type="radio" name="gender" id="" /><span>Nữ</span>
+  </div>
+  <div>
+    <label for="text" class="d">Địa chỉ</label>
+    <textarea name="address" id="address" cols="20" rows="3"></textarea>
+  </div>
+  <div>
+    <label for="option" class="d">Lớp</label>
+    <select>
+      <option value="" selected disabled hidden>Chọn lớp</option>
+      <option value="English">Anh</option>
+      <option value="Chinese">Trung</option>
+      <option value="Japanese">Nhât</option>
+    </select>
+  </div>
+  <div>
+    <label for="text" class="d">Email</label>
+    <input type="email" />
+  </div>
+  <div>
+    <label for="text" class="d">Number</label>
+    <input type="text" name="number" id="" />
+  </div>
+  <div>
+    <button type="submit">Đăng ký</button>
+    <button type="reset">Nhập lại</button>
+  </div>
+</form>
+<style>
+
