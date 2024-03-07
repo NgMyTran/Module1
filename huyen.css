@@ -1,0 +1,32 @@
+.h1 {
+  color: brown;
+  background-color: aquamarine;
+  height: 100px;
+  width: 100px;
+  border-radius: 0px;
+}
+h2 {
+  color: rgb(10, 221, 80);
+  background-color: rgb(251, 255, 127);
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+.a {
+  color: blue;
+}
+.b {
+  color: red;
+}
+.c {
+  background-color: blue;
+}
+#k {
+  color: red;
+}
+#z {
+  background-color: blue;
+}
+.icons {
+  color: green;
+}
