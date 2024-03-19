@@ -28,13 +28,111 @@
     <footer></footer>
 
     <script>
-      const day = parseInt(prompt("Ngay sinh "));
-      const month = parseInt(prompt("Thang sinh:"));
-          if ((month == 3 && date >= 21) || (month == 4 && date <= 19))
-            alert("Bach Duong")
-          else if ((month == 4 && date >= 20) || (month == 5 && date <= 20))
-            alert("Kim Nguu");
-      
+      // BAI TINH TRUNG BINH MON HOC
+      const math = parseInt(prompt("enter number"));
+      const physics = parseInt(prompt("enter number"));
+      const chemistry = parseInt(prompt("enter number"));
+      const Average = (math + physics + chemistry) / 3;
+
+      if (8 <= Average && Average <= 10) console.log("GIỎI");
+      else if (6.5 <= Average && Average <= 7.9) {
+        console.log("KHÁ");
+      } else if (5.0 <= Average && Average <= 6.4) {
+        console.log(" TRUNG BÌNH");
+      } else {
+        console.log("YẾU");
+      }
+
+      const a = parseInt(prompt("Nhập số a"));
+      const b = parseInt(prompt("Nhập số b"));
+      const c = parseInt(prompt("Nhập số c"));
+      if (a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && b + c > a) {
+        if (a === b && a === c && b === c) {
+          console.log("Đây là tam giác đều");
+        } else if (a === b || a === c || b === c) {
+          console.log("Đây là tam giác cân");
+        } else if (a !== b && b !== c && a !== c) {
+          console.log("Đây là tam giác thường");
+        } else {
+          console.log("Đây không phải là 3 cạnh của 1 tam giác");
+        }
+      }
+
+      // bai8 BT11 s9
+      // const m = parseInt(prompt("Cân nặng (kg)"));
+      // const h = parseInt(prompt("Chiều cao (m)"));
+      // const bmi = m / (h * h);
+      // if ((bmi < 18, 5)) console.log("Gầy");
+      // else if ((18, 5 <= bmi <= 24, 9 || 18, 5 <= bmi <= 22, 9)) {
+      //   console.log("Bình thường");
+      // } else if (bmi >= 25 || bmi >= 23) {
+      //   console.log("Thừa cân");
+      // } else if ((25 < bmi < 29, 9 || 23 < bmi < 24, 9)) {
+      //   console.log("Tiền béo phì");
+      // } else {
+      //   console.log("Béo phì");
+      // }
+      // bai8 BT11 s9
+
+      // bai7 BT11 s9
+      // const n = parseInt(prompt("Input number"));
+      // if (n == 0) console.log("x co gia tri la 0");
+      // else if (n > 0) {
+      //   console.log("So nguyen duong");
+      // } else {
+      //   console.log("so nguyen am");
+      // }
+      // bai7 BT11 s9
+
+      // bai6 BT11 s9
+      // const a = prompt("Input color");
+      // switch (a) {
+      //   case "red":
+      //     console.log("RED");
+      //     break;
+      //   case "yellow":
+      //     console.log("YELLOW");
+      //     break;
+      //   case "green":
+      //     console.log("GREEN");
+      //     break;
+      //   default:
+      //     console.log("Not available!!!");
+      //     break;
+      // }
+      // bai6 BT11 s9
+
+      // bai 5 BT11 s9
+      //       let number = parseInt(prompt(`nhap so`))
+      // let n = number % 2
+      // console.log(n)
+      // switch (n) {
+      //     case 0:
+      //         console.log(`so chan`);
+      //         break;
+      //     case 1:
+      //         console.log(`so le`);
+      //         break;
+      //     default:
+      //         console.log(`khong phai chu so`);
+      //         break;
+      // }
+      // bai 5 BT11 s9
+
+      // bai2 BT11 Session 9
+      // const h = parseInt(prompt("Nhap h"));
+      // if (h < 18) console.log("good day");
+      // else {
+      //   console.log("Good evening");
+      // }
+      // bai 2 BT11 Session 9
+
+      // const day = parseInt(prompt("Ngay sinh "));
+      // const month = parseInt(prompt("Thang sinh:"));
+      //     if ((month == 3 && date >= 21) || (month == 4 && date <= 19))
+      //       alert("Bach Duong")
+      //     else if ((month == 4 && date >= 20) || (month == 5 && date <= 20))
+      //       alert("Kim Nguu");
 
       // let month = parseInt(prompt("Thang "));
       // const year = parseInt(prompt("year"));
@@ -160,9 +258,9 @@
       //   console.log(`odd number`);
       // }
       /*const n = parseInt(prompt("Nhap so nguyen n"));
-            const result="";
-            result= n%2===0? "even nnumber" : "odd number";
-            console.log(result);*/
+                    const result="";
+                    result= n%2===0? "even nnumber" : "odd number";
+                    console.log(result);*/
 
       // // doi do C --> do F
       // const b = parseInt(prompt("So do C "));
