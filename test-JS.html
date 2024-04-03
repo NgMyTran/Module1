@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <header>
+      <button style="width: 10050pxpx; color: rgb(52, 224, 224); height: 30px">
+        logo
+      </button>
+      <p style="background-color: bisque; width: 100px; height: 300px">
+        Change color
+      </p>
+    </header> -->
+    <!-- <main>
+      <p>
+        <label for="Name">Tên đăng nhập</label>
+        <input type="text" name="" id="" />
+      </p>
+      <p>
+        <label for="pass">Mật khẩu</label>
+        <input type="password" name="" id="" />
+      </p>
+    </main> -->
+
+    <footer></footer>
+
+    <script>
+      // BAI TINH TRUNG BINH MON HOC
+      const math = parseInt(prompt("enter number"));
+      const physics = parseInt(prompt("enter number"));
+      const chemistry = parseInt(prompt("enter number"));
+      const Average = (math + physics + chemistry) / 3;
+
+      if (8 <= Average && Average <= 10) console.log("GIỎI");
+      else if (6.5 <= Average && Average <= 7.9) {
+        console.log("KHÁ");
+      } else if (5.0 <= Average && Average <= 6.4) {
+        console.log(" TRUNG BÌNH");
+      } else {
+        console.log("YẾU");
+      }
+
+      const a = parseInt(prompt("Nhập số a"));
+      const b = parseInt(prompt("Nhập số b"));
+      const c = parseInt(prompt("Nhập số c"));
+      if (a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && b + c > a) {
+        if (a === b && a === c && b === c) {
+          console.log("Đây là tam giác đều");
+        } else if (a === b || a === c || b === c) {
+          console.log("Đây là tam giác cân");
+        } else if (a !== b && b !== c && a !== c) {
+          console.log("Đây là tam giác thường");
+        } else {
+          console.log("Đây không phải là 3 cạnh của 1 tam giác");
+        }
+      }
+
+      // bai8 BT11 s9
+      // const m = parseInt(prompt("Cân nặng (kg)"));
+      // const h = parseInt(prompt("Chiều cao (m)"));
+      // const bmi = m / (h * h);
+      // if ((bmi < 18, 5)) console.log("Gầy");
+      // else if ((18, 5 <= bmi <= 24, 9 || 18, 5 <= bmi <= 22, 9)) {
+      //   console.log("Bình thường");
+      // } else if (bmi >= 25 || bmi >= 23) {
+      //   console.log("Thừa cân");
+      // } else if ((25 < bmi < 29, 9 || 23 < bmi < 24, 9)) {
+      //   console.log("Tiền béo phì");
+      // } else {
+      //   console.log("Béo phì");
+      // }
+      // bai8 BT11 s9
+
+      // bai7 BT11 s9
+      // const n = parseInt(prompt("Input number"));
+      // if (n == 0) console.log("x co gia tri la 0");
+      // else if (n > 0) {
+      //   console.log("So nguyen duong");
+      // } else {
+      //   console.log("so nguyen am");
+      // }
+      // bai7 BT11 s9
+
+      // bai6 BT11 s9
+      // const a = prompt("Input color");
+      // switch (a) {
+      //   case "red":
+      //     console.log("RED");
+      //     break;
+      //   case "yellow":
+      //     console.log("YELLOW");
+      //     break;
+      //   case "green":
+      //     console.log("GREEN");
+      //     break;
+      //   default:
+      //     console.log("Not available!!!");
+      //     break;
+      // }
+      // bai6 BT11 s9
+
+      // bai 5 BT11 s9
+      //       let number = parseInt(prompt(`nhap so`))
+      // let n = number % 2
+      // console.log(n)
+      // switch (n) {
+      //     case 0:
+      //         console.log(`so chan`);
+      //         break;
+      //     case 1:
+      //         console.log(`so le`);
+      //         break;
+      //     default:
+      //         console.log(`khong phai chu so`);
+      //         break;
+      // }
+      // bai 5 BT11 s9
+
+      // bai2 BT11 Session 9
+      // const h = parseInt(prompt("Nhap h"));
+      // if (h < 18) console.log("good day");
+      // else {
+      //   console.log("Good evening");
+      // }
+      // bai 2 BT11 Session 9
+
+      // const day = parseInt(prompt("Ngay sinh "));
+      // const month = parseInt(prompt("Thang sinh:"));
+      //     if ((month == 3 && date >= 21) || (month == 4 && date <= 19))
+      //       alert("Bach Duong")
+      //     else if ((month == 4 && date >= 20) || (month == 5 && date <= 20))
+      //       alert("Kim Nguu");
+
+      // let month = parseInt(prompt("Thang "));
+      // const year = parseInt(prompt("year"));
+      // switch (month) {
+      //   case 1:
+      //   case 3:
+      //   case 5:
+      //   case 7:
+      //   case 8:
+      //   case 10:
+      //   case 12:
+      //     console.log("30 ngay");
+      //     break;
+      //   case 4:
+      //   case 6:
+      //   case 9:
+      //   case 11:
+      //     console.log("31 nagy");
+      //     break;
+      //   case 2:
+      //     if (year % 4 == 0) console.log("năm nhuận (tháng 2 có 29 ngày)");
+      //     else {
+      //       console.log("tháng 2 có 28 ngày");
+      //     }
+      //     break;
+      //   default:
+      //     console.log("Year/month");
+      //     break;
+      // }
+
+      // const a = parseInt(prompt("First number: "));
+      // const c = prompt("phep toan + - * /");
+      // const b = parseInt(prompt("second number: "));
+      // switch (c) {
+      //   case "+":
+      //     console.log(a + b);
+      //     break;
+      //   case "-":
+      //     console.log(a - b);
+      //     break;
+      //   case "*":
+      //     console.log(a * b);
+      //     break;
+      //   case "/":
+      //     console.log(a / b);
+      //     break;
+      //   default:
+      //     console.log("fault");
+      //     break;
+      // }
+
+      // let day = prompt("day of week");
+      // switch (day) {
+      //   case "0":
+      //     console.log("Sunday");
+      //     break;
+      //   case "1":
+      //     console.log("Monday");
+      //     break;
+      //   case "2":
+      //     console.log("Tuesday");
+      //     break;
+      //   case "3":
+      //     console.log("Wednesday");
+      //     break;
+      //   case "4":
+      //     console.log("Thursday");
+      //     break;
+      //   case "5":
+      //     console.log("Friday");
+      //     break;
+      //   case "6":
+      //     console.log("Saturday");
+      //     break;
+      //   default:
+      //     console.log("Intput the day: ");
+      //     break;
+      // }
+
+      // const a = parseInt(prompt("Year: "));
+      // if (a % 4 == 0 && a % 100!==0 || a %400==0) console.log(`Năm ${a} là năm nhuận!`);
+      // else {
+      //   console.log(`Năm ${a} không phải là năm nhuận!`);
+      // }
+
+      // const a = parseInt(prompt("Nhập a"));
+      // const b = parseInt(prompt("Nhập b"));
+      // const c = parseInt(prompt("Nhập c"));
+      // const delta = b * b - 4 * a * c;
+      // if (delta > 0) console.log("The equation has two real solutions!");
+      // else if (delta === 0) {
+      //   console.log("The equation has one real solution!");
+      // } else {
+      //   console.log("The equation has no solution!");
+      // }
+
+      // ky tu dau vao la alphabet or upper or other
+      //       if (input.isUppercase()) console.log("Uppercase alphabet");
+      //       else if (input.is)
+      //       var char = prompt('Nhập vào một ký tự: ');
+      // if (char >= 'A' && char <= 'Z') {
+      //     console.log(char + ' là chữ cái viết hoa');
+      // }
+      // else if (char >= 'a' && char <= 'z') {
+      //     console.log(char + ' là chữ cái viết thường');
+      // }
+      // else {
+      //     console.log(char + ' không phải là chữ cái');
+      // }
+
+      // ng co mua luog cao nhat trng 2 ng
+      // const a = parseInt(prompt("First people: "));
+      // const b = parseInt(prompt("second people: "));
+      // if (a > b) console.log("nguoi thu nhat co muc luong cao nhat");
+      // else {
+      //   console.log("Nguoi thu hai la nguooi co muc luong cao nhat");
+      // }
+
+      // so chan so le
+      // let n = parseInt(prompt(`Nhap so nguyen`));
+      // if (n % 2 == 0) console.log(`even number`);
+      // else {
+      //   console.log(`odd number`);
+      // }
+      /*const n = parseInt(prompt("Nhap so nguyen n"));
+                    const result="";
+                    result= n%2===0? "even nnumber" : "odd number";
+                    console.log(result);*/
+
+      // // doi do C --> do F
+      // const b = parseInt(prompt("So do C "));
+      // const doC = 3;
+      // const doF = `9*${doC}/5+32`;
+      // console.log = doF;
+      // // doi do C --> do F
+
+      // // hien diem
+      // const a = parseInt(prompt(`diem so`));
+      // if (a >= 75) {
+      //   console.log(`Loai A`);
+      // }
+      // if (a >= 60 && a < 775) {
+      //   console.log(`Loai B`);
+      // }
+      // hien diem
+
+      // tim max trong dayso
+      // const a = parseInt(prompt("First number: "));
+      // const b = parseInt(prompt("second number: "));
+      // const c = parseInt(prompt("third number: "));
+      // const d = parseInt(prompt("Fourth number: "));
+      // const e = parseInt(prompt("fifth number: "));
+      // let max = a;
+      // if (max < b) {
+      //   max = b;
+      // }
+      // if (max < c) {
+      //   max = c;
+      // }
+      // if (max < d) {
+      //   max = d;
+      // }
+      // if (max < e) {
+      //   max = e;
+      // }
+      // console.log(`The biggest number is ${max}`);
+      // tim max trong dayso
+
+      // const a = parseInt(prompt("First number: "));
+      // const b = parseInt(prompt("second number: "));
+      // const c = parseInt(prompt("third number: "));
+      // if (a > b && a > c && a > d && a > e) {
+      //   console.log(`The biggest number is ${a}`);
+      // } else if (b > a && b > c && b > d && b > e) {
+      //   console.log(`the biggest number is" ${b}`);
+      // } else {
+      //   console.log(`The biggest number is ${c}`);
+      // }
+
+      //   // doi dolla
+      //   const usd = parseInt(prompt("How much dollar do you want to change? "));
+      //   const numberVietNam = usd * 23000;
+      //   const VND = `${numberVietNam} VND`;
+      //   console.log(VND);
+
+      //   // diem trung binh
+      //   const math = parseInt(prompt("enter number"));
+      //   const physics = parseInt(prompt("enter number"));
+      //   const chemistry = parseInt(prompt("enter number"));
+      //   const Average = (math + physics + chemistry) / 3;
+      //   if (Average < 5) {
+      //     console.log("Qua môn");
+      //   } else {
+      //     console.log("Khong đậu");
+      // }
+      // diem trung binh
+      //   nguyên dương
+      //   const number = prompt(parseInt("enter a number: "));
+      //   if (number >= 0) {
+      //     console.log("So duong");
+      //   } else {
+      //     console.log("So am");
+      //   }
+
+      //   //   nguyên âm
+      //   alert("Hello! Are you ready?");
+      //   const PI = 3.14;
+      //   var age = 28;
+      //   let fullName = "Duong Ngoc";
+      //   let address = "Hồ Chí Minh";
+      //   document.write(`Tôi là ${fullName} tôi ${age} tuổi tôi ở ${address}`);
+
+      //   //   Tên đăng nhập
+      //   var userName = "Lan Duong";
+      //   let password = "12345678";
+      //   //    const uppercaseUser = user.toUpperCase()
+      //   const lengthUserName = userName.length;
+      //   const lengthPassword = password.length;
+      //   if (
+      //     lengthUserName >= 6 &&
+      //     lengthPassword >= 8 &&
+      //     password == password.toUppercase()
+      //   ) {
+      //     console.log("Đăng nhập thành công");
+      //   } else {
+      //     console.log("Đăng nhập thất bại");
+      //   }
+      //   //   Mật khẩu
+
+      //       var exchangeRate = 23.000;
+
+      // // Hàm chuyển đổi tiền tệ
+      // function convertCurrency(usdAmount) {
+      //   var eurAmount = usdAmount * exchangeRate;
+      //   return eurAmount;
+      // }
+
+      // // Sử dụng hàm
+      // var usdAmount = 100;
+      // var eurAmount = convertCurrency(usdAmount);
+
+      // console.log(usdAmount + " USD tương đương " + eurAmount + " EUR.");
+    </script>
+  </body>
+</html>

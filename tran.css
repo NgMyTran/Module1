@@ -76,3 +76,66 @@ tr:nth-child(even) {
 .stylexv {
   background-color: antiquewhite;
 }
+
+.project-top {
+  margin-top: 96px;
+  margin-bottom: 65px;
+  justify-content: center;
+  gap: 50px;
+  display: flex;
+}
+.text-Project {
+  margin-bottom: 99px;
+  text-align: center;
+  color: rgba(167, 167, 167, 1);
+  font-size: 32px;
+}
+
+.Projects-item {
+  padding-top: 0px;
+  display: flex;
+  background-color: rgba(54, 54, 54, 1);
+  width: 375px;
+  height: 567px;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.img-item {
+  margin-top: -17px;
+}
+
+.title-item {
+  padding-left: 28px;
+  color: rgba(204, 204, 204, 1);
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.text-item1 {
+  padding-left: 28px;
+  font-size: 18px;
+  color: rgba(204, 204, 204, 1);
+}
+
+.text-item2 {
+  padding-left: 28px;
+  color: rgba(204, 204, 204, 1);
+  font-size: 14px;
+}
+
+.link-github {
+  gap: 48px;
+  justify-content: flex-start;
+  padding-left: 28px;
+  display: flex;
+  color: rgba(255, 255, 255, 1);
+}
+
+.project-bottom {
+  margin-bottom: 200px;
+  justify-content: center;
+  gap: 50px;
+  display: flex;
+}
