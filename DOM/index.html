@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- <h1>DOM-document object model</h1>
+    <a href="https://google.com">My link</a>
+    element: the a
+    attribute: 
+    phg thuc truy xuat phan tu DOM
+    document.gatElementById(id)_object cua windows 
+  document.getElementsByClassName("classname")_array cua windows
+
+  <button id="btn">Click me!!!</button>
+
+    <p class="title"></p>
+    <p class="title"></p>
+    <p class="title"></p>
+
+    <div id="div1"></div>
+
+    <button id="congTinh"></button>
+
+    <button onclick="displayDate()">This time is?</button>
+    <p id="demo"></p> 
+
+  <div class="cT1" onmouseover="movemover(this)" onmouseout="movemout(this)">
+      Over me
+    </div>
+    <p id="demo">Thank you</p> -->
+
+    <!-- bt1 -->
+    <!-- <button id="btn1">Show text</button>
+    <button onclick="hide()">Hide text</button>
+    <p id="bt1"></p> -->
+
+    <!-- <div class="container">
+      <h1>Modal example</h1>
+      <button id="openModal" onclick="showbox()">Open Modal</button>
+      <div id="boxbt2">
+        <p>Some text in Modal</p>
+        <p id="exitX">X</p>
+      </div>
+    </div> -->
+    <!-- <div id="square" onmouseover="">
+      <h1>Change backgrounf color</h1>
+      <p>Mouse over the squares!</p>
+      <div id="div3box">
+        <div id="box1" style="border-color:black"onclick="handleChangeYellow()"></div>
+        <div id="box2" onclick="handleChangeGreen()"></div>
+        <div id="box3" onclick="handleChangeGray()"></div>
+      </div>
+    </div> -->
+
+    <!-- <h3>Tooltip</h3>
+    <p>Move the tooltip text below:</p>
+    <div id="title">
+      <p onmouseover="appear()" onmouseout="disappear()">Hover over me</p>
+      <h4 id="tooltip">tooltip text</h4>
+    </div> -->
+    <!-- <div class="formContainer"> -->
+    <form class="container" onsubmit="handleSubmit(event)">
+      <h2>Registation</h2>
+      <input
+        type="text"
+        id="usersName"
+        name="usersName"
+        oninput="inputUsersName()"
+        placeholder="Enter your name"
+      />
+      <p id="errorUsersName"></p>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        oninput="inputEmail()"
+        placeholder="Enter your email"
+      />
+      <p id="errorEmail"></p>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        oninput="inputPass()"
+        placeholder="Create password"
+      />
+      <p id="errorPass"></p>
+      <input
+        type="password"
+        id="confirmPass"
+        name="confirmPass"
+        oninput="inputConfirmPass()"
+        placeholder="Confirm Password"
+      />
+      <p id="errorConfirmPass"></p>
+      <span>
+        <input
+          type="checkbox"
+          id="checkbox"
+          oninput="handleCheckboxChange()"
+        />I accept all terms & condition</span
+      >
+      <p id="errorCheckbox"></p>
+
+      <p><button id="btnRegister" type="submit">Register Now</button></p>
+      <p>Already have an account?<span style="color: blue"> Login now</span></p>
+    </form>
+    <!-- </div> -->
+    <div id="title"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
+<!-- Nếu là id giống tên phần tử thì không phải truy xuất phần tử DOM oninput on -->
