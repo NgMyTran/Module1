@@ -219,13 +219,6 @@ function inputConfirmPass() {
     checkConfirmPass = true;
   }
 }
-// if (
-//   errorUsersName.value === "" &&
-//   errorEmail.value === "" &&
-//   errorPass.value === "" &&
-//   errorConfirmPass.value === ""&&
-//   errorCheckbox.value===""
-// )
 {
   const checkbox = document.getElementById("checkbox");
   const errorCheckbox = document.getElementById("errorCheckbox");
@@ -243,7 +236,13 @@ function inputConfirmPass() {
     }
   }
 }
-const users = [];
+
+let letItem = document.getElementById("letItem");
+const users = JSON.parse(localStorage.getItem("users")) || [];
+for (let i in users) {
+  letItem.innerHTML += `<div>${users[i].name} - ${users[i].email}</div>`;
+}
+
 function handleSubmit(event) {
   event.preventDefault(); //ngan can hanh dong mac dinh
   // console.log(checkName);
@@ -258,15 +257,34 @@ function handleSubmit(event) {
     checkCheckbox
   ) {
     const newUser = {
-      userName: usersName.value,
+      id: Math.floor(Math.random() * 1000),
+      name: usersName.value,
       email: email.value,
       password: password.value,
-      consfirmPassword: confirmPass.value,
     };
-    users.push(newUser);
-    console.log("new user", newUser);
-    event.target.reset();
+    let indexEmail = users.findIndex((user) => user.email === email.value);
+    console.log(indexEmail, "indexEMail");
+    if (indexEmail === -1) {
+      users.push(newUser);
+      console.log("new user", newUser);
+      // alert("Dang nhap thanh cong");
+      FuiToast.success("Success toast message.");
+      localStorage.setItem("users", JSON.stringify(users));
+      event.target.reset();
+    } else {
+      // alert("email has been exit");
+      FuiToast.error("email has been exit");
+    }
   } else {
-    console.log("BBB");
+    // console.log("BBB");
+    FuiToast.error("Error toast message.");
   }
 }
+// let isCheck=false;
+// for(let i in users){
+//   if(users[i].email===email.value) isCheck=true;
+// }
+// if(isCheck) {alert("email has been exit")}
+// else {users.push(newUser);
+//   console.log("new user", newUser);
+//   event.target.reset();
