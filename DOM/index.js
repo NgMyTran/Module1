@@ -119,7 +119,7 @@ let clickExit = document.getElementById("");
 //   tooltip.style.display = "none";
 // }
 
-const usersName = document.getElementById("usersName");
+/*const usersName = document.getElementById("usersName");
 const errorUsersName = document.getElementById("errorUsersName");
 const email = document.getElementById("email");
 const errorEmail = document.getElementById("errorEmail");
@@ -245,10 +245,6 @@ for (let i in users) {
 
 function handleSubmit(event) {
   event.preventDefault(); //ngan can hanh dong mac dinh
-  // console.log(checkName);
-  // console.log(checkEmail);
-  // console.log(checkCheckbox);
-  // console.log(checkEmail);
   if (
     checkName &&
     checkEmail &&
@@ -288,3 +284,11 @@ function handleSubmit(event) {
 // else {users.push(newUser);
 //   console.log("new user", newUser);
 //   event.target.reset();
+*/
+
+// Tìm số lớn nhất và suy nhất trong chuỗi có 5 chữ số
+
+// nhập 1 chuỗi -> tính tổng các số nguyên tố trong chuỗi
+//tạo hình trái tim bằng javascript
+//nhập 1 chuỗi ký tự -> output chữ, k output số
+// nhập 1 chuối và trả về là các chuỗi đảo ngược, giữ lại space trong chuỗi đó
